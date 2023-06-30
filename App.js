@@ -8,11 +8,11 @@ import {WalletConnector} from './components/WalletConnector'
 function App({ Component, pageProps }) {
   const [tasks, setTasks] = React.useState([
     {
-      text: 'Изучить ReactJS',
+      text: 'ReactJS',
       completed: true,
     },
     {
-      text: ' ToDo на ReactJS',
+      text: ' ToDo',
       completed: false,
     },
   ]);
@@ -39,9 +39,6 @@ function App({ Component, pageProps }) {
 
   return (
     <div className="todo">
-      <div className="todo__header">
-        <h4>NFT mint!</h4>
-      </div>
       <Web3ReactProvider getLibrary={getLibrary}>
         <WalletConnector {...pageProps} />
       </Web3ReactProvider>
