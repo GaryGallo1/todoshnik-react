@@ -1,3 +1,4 @@
+# first version of app
 import React from 'react';
 import { ListItem } from './components/ListItem';
 import { TaskField } from './components/TaskField';
